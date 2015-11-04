@@ -1,0 +1,63 @@
+@import url("../wp-content/themes/twentyfifteen/style.css");
+
+
+/* ######## General ########## */
+body:before {
+    background: none;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1200px;
+    margin:0 auto;
+    background-color: #fff;
+    text-align:center;
+}
+li {list-style:none;}
+h1 {font-size: 150%;}
+
+/* ####### Structure ####### */
+
+/* Header */
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 80%;
+}
+.header-content {
+    display:inline-block;
+    width: 31.3%;
+    /*margin: 0 1%;*/
+}
+.nav li {
+    display: inline-block;
+}
+.nav-level-2, .nav-level-3 {display:none;}
+
+#support-btns li {width: 30%; height:50px;font-size: 80%;color:#fff;text-align:center;}
+#support-btns li:nth-of-type(1) {background-color:blue;}
+#support-btns li:nth-of-type(2) {background-color:aqua;}
+#support-btns li:nth-of-type(3) {background-color:orange;}
+#support-btns li div {float:left;}
+/*#support-btns li:nth-of-type(3) div {float:none;}*/
+#support-btns li p {word-wrap: break-word;}
+#support-btns .btn img {width: 40%;}
+#support-btns a {color:#fff;}
+
+.pattern {
+    width: 100%;
+    height:30px;
+    background-image: url(images/header-graphics/icon-pattern.png) ;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 10%;
+    background-color: orange;
+}
+
+/* Main */
+/* slide show */
+.slideshow {height: 200px;}
+
+
+
+/* Main */
