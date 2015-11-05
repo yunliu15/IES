@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="73d220e2-6032-4273-8018-4283ed0b883e" name="IES" url="http://192.240.179.8">
+      <webServer id="73d220e2-6032-4273-8018-4283ed0b883e" name="IES (project level)" url="http://192.240.179.8">
         <fileTransfer host="192.240.179.8" port="21" username="ftp@ies-ny.com">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
