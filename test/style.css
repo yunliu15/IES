@@ -12,10 +12,18 @@ body {
     background-color: #fff;
     text-align:center;
     box-sizing: border-box;
+    font-family:Lato, Arial, Helvetica, sans-serif;
 }
 li {list-style:none;}
 h1 {font-size: 150%;}
 ul {margin:0;}
+
+.orange-btn {
+    background-color: #F28523;
+}
+.orange-btn:hover {background-color: #58C3E0;;}
+
+
 /* ####### Structure ####### */
 .left {float:left;}
 .right {float:right;}
@@ -79,7 +87,14 @@ ul {margin:0;}
 
 
 
-/* Main */
+/* Home Widgets */
+.home-widgets .widget-row {display:flex;}
+.widget-row .home-widget {width:30%;margin:auto;}
+.widget-row .widget-text {wtext-align:left;}
+.widget-icon {width:30px; height:30px; background-color: #58C3E0;border-radius: 100%; }
+.widget-icon:hover {background-color: #F28523;}
+.widget-icon img {width:20px;}
+
 
 
 
