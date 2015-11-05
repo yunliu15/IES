@@ -2,18 +2,21 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IES</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- Header -->
-    <header>
-        <div class="header-container">
-            <div id="logo" class="header-content">
+    <header id="masthead" class="site-header" role="banner">
+        <!-- Header-container -->
+        <div class="site-header-mai header-container clearfix">
+            <div id="logo" class="header-content left">
                 <img src="images/header-graphics/ies-logo.png">
             </div>
-            <div id="head-nav" class="header-content">
-                <ul class="nav nav-level-1">
+            <!-- Header Menu -->
+            <div id="head-nav" class="header-content left clearfix">
+                <ul class="nav nav-level-1 ">
                     <li>
                         <a href="#">About</a>
                         <ul class="nav nav-level-2">
@@ -45,47 +48,42 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
-            </div>
+            </div><!--end of Header Menu -->
+            <!-- support-btns -->
             <div id="support-btns" class="header-content">
                 <ul class="nav">
                     <li class="btn">
                         <a href="#">
-                            <div >
-                                <img src="images/header-graphics/remote-support.png">
-
-                            </div>
-                            <div><p>Remote<br>Support</p></div>
+                            <img src="images/header-graphics/remote-support.png">
+                            <div>Remote<br>Support</div>
                         </a>
 
                     </li>
                     <li class="btn">
                         <a href="#">
-                            <div >
-                                <img src="images/header-graphics/customer-portal.png">
-                            </div>
+                            <img src="images/header-graphics/customer-portal.png">
                             <div>Customer<br>Portal</div>
                         </a>
 
                     </li>
                     <li class="btn">
                         <a href="#">
-                            <div >
-
-                                <span>Get a Quote</span>
-                            </div>
+                             <div>Get a Quote</div>
                         </a>
 
                     </li>
                 </ul>
-            </div>
-        </div>
+            </div><!-- end of support-btns -->
+        </div><!-- Header-container -->
+
         <div class="pattern">
 
         </div>
 
     </header><!--end of Header-->
-<!--Main Container-->
-    <div class="main-container">
+
+    <!--Main Container-->
+    <div  class="main-container">
         <!-- top part of Home page -->
         <section class="main-top">
             <div class="slideshow">
