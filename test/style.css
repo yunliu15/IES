@@ -1,57 +1,73 @@
-@import url("../wp-content/themes/twentyfifteen/style.css");
+@import url("../wp-content/themes/twentysixteen/style.css");
 
 
 /* ######## General ########## */
 body:before {
-    background: none;
-    box-shadow: none;
-    box-sizing: border-box;
+    display:none!important;
+
 }
 body {
     max-width: 1200px;
     margin:0 auto;
     background-color: #fff;
     text-align:center;
+    box-sizing: border-box;
 }
 li {list-style:none;}
 h1 {font-size: 150%;}
-
+ul {margin:0;}
 /* ####### Structure ####### */
+.left {float:left;}
+.right {float:right;}
+.nav li {
+    float:left;
+}
 
 /* Header */
 .header-container {
-    width: 80%;
+    padding: 20px 10%;
     margin: 0 auto;
     font-size: 80%;
+    position: relative;
+
 }
-.header-content {
-    display:inline-block;
-    width: 31.3%;
-    /*margin: 0 1%;*/
-}
-.nav li {
-    display: inline-block;
-}
+/*.header-content {width: 20%;margin-right: 5%;}*/
+
+.header-content.left {margin-right:5%;}
+
+#head-nav {min-width: 280px;position: relative; top:50px;}
+#head-nav .nav-level-1 li{margin-right: 5%;}
+
 .nav-level-2, .nav-level-3 {display:none;}
 
-#support-btns li {width: 30%; height:50px;font-size: 80%;color:#fff;text-align:center;}
-#support-btns li:nth-of-type(1) {background-color:blue;}
-#support-btns li:nth-of-type(2) {background-color:aqua;}
-#support-btns li:nth-of-type(3) {background-color:orange;}
-#support-btns li div {float:left;}
+#support-btns {width: 40%;min-width: 340px;position:relative;top: 20px;margin-right:0;}
+#support-btns li {
+    width: 100px;
+    font-size: 90%;
+    height: 40px;
+    color:#fff;
+    text-align:center;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+#support-btns li:nth-of-type(1) {background-color: #3684C5; margin-left:0;}
+#support-btns li:nth-of-type(2) {background-color: #58C3E0;}
+#support-btns li:nth-of-type(3) {background-color:#F28523;padding-left:18px;padding-top:15px;}
+
 /*#support-btns li:nth-of-type(3) div {float:none;}*/
-#support-btns li p {word-wrap: break-word;}
-#support-btns .btn img {width: 40%;}
+#support-btns .btn div, #support-btns .btn img{float:left;}
+#support-btns .btn img {width: 20px;margin-top:5px;margin-right:10px;}
+#support-btns .btn div{
+    line-height: 1.2em;
+}
 #support-btns a {color:#fff;}
 
 .pattern {
     width: 100%;
     height:30px;
-    background-image: url(images/header-graphics/icon-pattern.png) ;
-    background-repeat: repeat-x;
-    background-position: center;
-    background-size: 10%;
-    background-color: orange;
+    background : url(images/header-graphics/icon-pattern.png) repeat-x center;
+    background-size: 100px;
+    background-color: #F28523;
 }
 
 /* Main */
@@ -61,3 +77,17 @@ h1 {font-size: 150%;}
 
 
 /* Main */
+
+
+
+/* ########### Clearfix ########### */
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+
+.clearfix:after {
+    clear: both; }
+
+
+/* ######## Media query ####### */
+@media screen and (max-width: 550px)
