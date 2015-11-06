@@ -7,15 +7,23 @@ body:before {
 
 }
 body {
-    max-width: 1200px;
+    max-width: 1300px;
     margin:0 auto;
     background-color: #fff;
     text-align:center;
     box-sizing: border-box;
+    font-family:Lato, Arial, Helvetica, sans-serif;
 }
 li {list-style:none;}
 h1 {font-size: 150%;}
 ul {margin:0;}
+
+.orange-btn {
+    background-color: #F28523;
+}
+.orange-btn:hover {background-color: #58C3E0;;}
+
+
 /* ####### Structure ####### */
 .left {float:left;}
 .right {float:right;}
@@ -28,19 +36,22 @@ ul {margin:0;}
     padding: 20px 10%;
     margin: 0 auto;
     font-size: 80%;
-    position: relative;
 
 }
 /*.header-content {width: 20%;margin-right: 5%;}*/
 
-.header-content.left {margin-right:5%;}
+.header-content {margin:auto;}
 
-#head-nav {min-width: 280px;position: relative; top:50px;}
-#head-nav .nav-level-1 li{margin-right: 5%;}
+#head-nav {min-width: 280px;font-size:110%;}
+#head-nav li {text-align:left;}
+#head-nav .nav-level-1 li{margin-right: 5%;position:relative;}
 
-.nav-level-2, .nav-level-3 {display:none;}
+.nav-level-2, .nav-level-3 {display:none;position:absolute;background-color: #fff; padding:10px;width:250px;}
+.nav-level-3{left:10px;display:block;position:relative;}
+.nav-level-2 li, .nav-level-3 li {float:none;}
+#head-nav .nav-level-1 li:hover .nav-level-2{display:block;}
 
-#support-btns {width: 40%;min-width: 340px;position:relative;top: 20px;margin-right:0;}
+#support-btns {min-width: 340px;}
 #support-btns li {
     width: 100px;
     font-size: 90%;
@@ -75,8 +86,32 @@ ul {margin:0;}
 .slideshow {height: 200px;}
 
 
+.main-top .btn {font-size:70%; padding-left:2em; padding-right:2em;}
+/* Home Widgets */
+.home-widgets {padding:50px 15%;background-color:#F7F7F7;margin:50px 0;}
+.home-widgets .widgets-row {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    
+    flex-wrap:wrap;
+}
 
-/* Main */
+.home-widgets .widget-center {padding:0 10%;}
+.widget-center .widget-title {font-size:150%;}
+.widgets-row .home-widget {width:33%; margin:0 auto;}
+.widgets-row .widget-text {
+    padding:0 10px;
+    width:calc(100% - 30px);
+    text-align:left;
+    display:inline-block;}
+.widget-icon {margin-top:5px;width:30px; height:30px; background-color: #58C3E0;border-radius: 100%;float:left; }
+.widget-icon:hover {background-color: #F28523;}
+.widget-icon img {width:20px;}
+.widget-title {margin-bottom: 0.6em;line-height:1.5em;font-weight:bold;}
+.widget-content {margin-bottom:0;}
 
 
 
@@ -90,4 +125,23 @@ ul {margin:0;}
 
 
 /* ######## Media query ####### */
-@media screen and (max-width: 550px)
+@media screen and (max-width: 1200px) {
+    #head-nav{
+        order: 3;
+        margin-top:30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .widgets-row .home-widget {width:50%;}
+}
+@media screen and (max-width: 890px) {
+    #support-btns{margin-top:30px;}
+}
+@media screen and (max-width: 768px) {
+    #support-btns li{
+        margin-left:0px;
+    }
+
+    .widgets-row .home-widget {width:100%;}
+}
