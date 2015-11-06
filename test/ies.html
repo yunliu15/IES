@@ -12,7 +12,7 @@
         <!-- Header-container -->
         <div class="site-header-main header-container clearfix">
             <div id="logo" class="header-content left">
-                <img src="images/header-graphics/ies-logo.png">
+               <a href="#"> <img src="images/header-graphics/ies-logo.png"></a>
             </div>
             <!-- Header Menu -->
             <nav id="head-nav" class="header-content left clearfix">
@@ -100,7 +100,7 @@
         <!-- middle part of home page -->
         <section class="main-middle">
             <!-- Home Widgets -->
-            <div class="home-widgets">
+            <div class="home-widgets section">
                 <div class="home-widget widget-center">
                     <p class="widget-title">
                         Managed Services
@@ -193,13 +193,14 @@
 
             </div><!-- end of Home Widgets -->
             <!-- News and newsletter -->
-            <div id="news">
-                <div class="col-left">
+            <div id="news" class="clearfix section">
+                <h3 class="title">IES NEWS</h3>
+                <div class="col-left left">
                     <div class="img-wrapper">
-                        <img src="" alt="news">
+                        <img src="images/home/blog-image.jpg" alt="news">
                     </div>
                     <div class="blog">
-                        <p class="blog-title">
+                        <p class="blog-title title">
                             Vestibulum Viverra In Nunc Ut Accumsan
                         </p>
                         <p class="blog-date">
@@ -211,7 +212,7 @@
                         <p><a href="#">Read More</a></p>
                     </div>
                 </div>
-                <div class="col-right">
+                <div class="col-right left">
                     facebook plugin
                 </div>
             </div>
@@ -221,28 +222,30 @@
         </section><!-- end of middle part of home page -->
 
         <!-- bottom part of home page -->
-        <section class="main-bottom">
-            <div id="testimonials">
+        <section class="main-bottom section">
+            <div id="testimonials" class="section">
                 <h3>Your Experience Matters</h3>
-                <div class="col-left">
-                    <div class="title">
-                        <img src="" alt="BankUSA">
+                <div class="clearfix">
+                    <div class="col-left left">
+                        <div class="title">
+                            <img src="images/home/bankusa-logo.png" alt="BankUSA">
+                        </div>
+                        <p>
+                            "Great service and great people! Will be working with IES again. What an outstanding company."
+                        </p>
+                        <p class="name">- John Murphy, BankUSA</p>
                     </div>
-                    <p>
-                        "Great service and great people! Will be working with IES again. What an outstanding company."
-                    </p>
-                    <p class="name">John Murphy, BankUSA</p>
-                </div>
-                <div class="col-right">
-                    <div class="title">
-                        <img src="" alt="TopHospital">
+                    <div class="col-right right">
+                        <div class="title">
+                            <img src="images/home/tophospital-logo.png" alt="TopHospital">
+                        </div>
+                        <p>
+                            "Extremely thorough and kind. IES knows what they're doing. Answered all the questions we had."
+                        </p>
+                        <p class="name">- Dr. Jame Smith, TopHospital </p>
                     </div>
-                    <p>
-                        "Extremely thorough and kind. IES knows what they're doing. Answered all the questions we had."
-                    </p>
-                    <p class="name">Dr. Jame Smith, TopHospital </p>
                 </div>
-                <button> View Testimonials</button>
+                <button class="btn blue-btn"> View Testimonials</button>
             </div>
         </section><!-- end of bottom part of home page -->
     </div><!-- end of Main Container -->
